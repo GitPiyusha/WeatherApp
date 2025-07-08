@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>WeatherApp</title>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1>Weather App</h1>
+        <p>Get the current weather of any city</p>
+    </header>
+    <br>
+<div class="searchSec">
+    <input type="text" name="cityIp" id="cityip"placeholder="Enter city" class="cityip">
+            <button id="srcbtn" class="src-btn">Get Weather</button>
+
+</div>
+
+<div id="error" class="error hidden">
+    <p id="errorMessage">Error: City not found</p>
+</div>
+<div id="weatherDisplay" class="weatherDisplay hidden">
+    <h2 id="cityName">City Name</h2>
+
+    <div class="weather-info">
+        <div class="temperature">
+            <span id="temperature">Temperature: </span>
+            <span class="unit">°C</span>
+        </div>
+        <div class="description">
+            <p id="description">Description: </p>
+        </div>
+    </div>
+     <div class="weather-details">
+        <div class="detail-items">
+            <span class="label">Feels like: </span>
+            <span id="feelslike"></span>°C
+        </div>
+        <div class="detail-items">
+            <span class="label">Humidity: </span>
+            <span id="humidity"></span>%
+        </div>
+        <div class="detail-items">
+            <span class="label">Wind Speed: </span>
+            <span id="windSpeed"></span> km/h
+        </div>
+    </div>
+</div>
+<div id="loading" class="hidden">Loading...</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
